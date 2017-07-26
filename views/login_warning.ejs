@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet" >
+    <link href="assets/bootstrap-social.css" rel="stylesheet" >
+    <title>JK's BOOTH ROOM</title>
+    <style>
+        body{
+
+            background-color: rgba(189, 189, 189, 0.17);
+
+        }
+        hr{
+            border :  solid 1px black;
+        }
+
+        .main_banner{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            color: inherit;
+
+        }
+        .main_booth_banner{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            color: inherit;
+            background-color : white;
+        }
+
+    </style>
+</head>
+<body>
+<audio autoplay loop>
+    <source src="./music/jk9.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div class="container">
+    <div class="main_banner">
+        <h1 style="color : black; text-align: center">JK's BOOTH</h1>
+        <hr>
+        <div class="jumbotron">
+            <a href="/categoryselect">
+                <h1>로그인을 해주세요</h1>
+            </a>
+
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <%if(isLogin){%>
+            <h1 style="text-align:center;color : white">You are logged in</h1>
+            <%} else{%>
+
+            <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook" style="text-align:center;">
+                <span class="fa fa-facebook"></span> Sign in with Facebook
+            </a>
+            <%}%>
+
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
